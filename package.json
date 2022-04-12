@@ -27,7 +27,8 @@
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
     "normalizr": "^3.6.2",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.4.1",
+    "yargs": "^17.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

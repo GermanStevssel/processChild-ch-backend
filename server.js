@@ -6,6 +6,7 @@ import { Server as HttpServer } from "http";
 import { Server as IOServer } from "socket.io";
 import cors from "cors";
 import path from "path";
+import { yargObj } from "./utils/yargs.js";
 import { fileURLToPath } from "url";
 import MongoStore from "connect-mongo";
 import moment from "moment";
@@ -84,7 +85,7 @@ app.use("/api/productos", productsRouter);
 app.use("/api/carrito", cartRouter);
 app.use("/", webRouter);
 
-const PORT = config.PORT;
+const PORT = yargObj.PORT;
 const server = httpServer.listen(PORT, () => {
 	console.log(`Express is listening in port http://localhost:${PORT}`);
 });
