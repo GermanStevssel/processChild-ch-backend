@@ -1,6 +1,6 @@
 import { Router } from "express";
 import yargs from "yargs";
-import { getArgs } from "../utils/getTerminalArgs";
+import { getArgs } from "../utils/getTerminalArgs.js";
 
 export const infoRouter = Router();
 const data = yargs(process.argv.slice(2)).argv;

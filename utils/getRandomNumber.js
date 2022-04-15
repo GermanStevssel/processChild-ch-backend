@@ -1,4 +1,4 @@
-const randomNumber = (quantity) => {
+export const randomNumber = (quantity) => {
 	parseInt(quantity);
 	const numbers = {};
 

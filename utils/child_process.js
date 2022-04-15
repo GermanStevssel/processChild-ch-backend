@@ -1,4 +1,4 @@
-import { randomNumber } from "./getRandomNumber";
+import { randomNumber } from "./getRandomNumber.js";
 
 process.on("message", (cant) => {
 	const numbers = randomNumber(cant);
