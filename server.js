@@ -19,6 +19,8 @@ import { webRouter } from "./routes/webRouter.js";
 import { registerRouter } from "./routes/userRouter.js";
 import { loginRouter } from "./routes/userRouter.js";
 import normalizer from "./normalizr/normalizr.js";
+import { infoRouter } from "./routes/infoRouter.js";
+import { randomRouter } from "./routes/randomRouter.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -83,6 +85,8 @@ app.use("/register", registerRouter);
 app.use("/login", loginRouter);
 app.use("/api/productos", productsRouter);
 app.use("/api/carrito", cartRouter);
+app.use("/info", infoRouter);
+app.use("/api/randoms", randomRouter);
 app.use("/", webRouter);
 
 const PORT = yargObj.PORT;
